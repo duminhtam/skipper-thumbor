@@ -50,7 +50,7 @@ module.exports = function skipperThumbor (options) {
           done();
         });
         r.on('error', (error) => {
-          receiver.emit('error', err);
+          receiver.emit('error', error);
           return;
         });
         streamFile.pipe(r);

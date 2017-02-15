@@ -35,17 +35,17 @@ module.exports = function skipperThumbor (options) {
             const locationParsedArray = response.headers.location.split('/');
             const smartPath = locationParsedArray[2];
             // const smartPath = response.headers.location.slice(6);
-            const thumbnail = thumborURL.setImagePath(smartPath).resize(320, 320).buildUrl();
+            const thumbUrl = thumborURL.setImagePath(smartPath).resize(320, 320).buildUrl();
 
             // result.url = url;
             result.id = smartPath;
+            result.thumbUrl = thumbUrl;
 
           }
           receiver.emit('writefile', streamFile);
 
           const responseJSON = response.toJSON();
           result.statusCode = responseJSON.statusCode;
-          result.thumbnail = thumbnail;
           result.imageHost = options.imageHost;
 
           streamFile.extra = result;

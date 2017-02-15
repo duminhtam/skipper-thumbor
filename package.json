@@ -1,6 +1,6 @@
 {
   "name": "skipper-thumbor",
-  "version": "0.0.3",
+  "version": "1.0.0",
   "description": "Skipper Adapter for Thumbor",
   "main": "index.js",
   "scripts": {

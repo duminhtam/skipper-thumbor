@@ -42,6 +42,10 @@ module.exports = function skipperThumbor (options) {
 
           }
           receiver.emit('writefile', streamFile);
+
+          const responseJSON = response.toJSON();
+          result.statusCode = responseJSON.statusCode;
+
           streamFile.extra = result;
           done();
         });

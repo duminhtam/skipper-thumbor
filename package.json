@@ -1,0 +1,23 @@
+{
+  "name": "skipper-thumbor",
+  "version": "0.0.3",
+  "description": "Skipper Adapter for Thumbor",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/duminhtam/skipper-thumbor.git"
+  },
+  "author": "Tam Du",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/duminhtam/skipper-thumbor/issues"
+  },
+  "homepage": "https://github.com/duminhtam/skipper-thumbor#readme",
+  "dependencies": {
+    "request": "^2.79.0",
+    "thumbor": "^0.1.3"
+  }
+}
